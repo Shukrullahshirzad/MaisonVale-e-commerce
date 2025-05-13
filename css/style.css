@@ -9,6 +9,17 @@
 :root{
     --heading-color: #222;
     --paragraph-color: #465b52;
+    --grey:#707e7b;
+    --brown-olive: #8a6532;
+    --soft-teal: #c5dadd;
+    --deep-brown: #634028;
+    --charcoal-gray: #2e3639;
+    --slate-gray: #707e7b;
+    --rose-pink: #efa0ac;
+    --warm-tan: #be8f6e;
+    --dark-chocolate: #3a1c10;
+    --salmon-pink: #df7d74;
+    --peach-cream: #efcdbe;
 }
 
 
@@ -57,4 +68,50 @@ p{
 }
 body{
     width: 100%;
+}
+
+/* 
+====================================
+        Header section styles
+====================================
+*/
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    background-color: var(--rose-pink);
+}
+.header-content img{
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+#nav-list{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+}
+#nav-list li{
+    font-size: 1.125rem;
+    color: var(--heading-color);
+    cursor: pointer;
+    
+}
+#nav-list li a{
+    text-decoration: none;
+    color: var(--slate-gray);
+    transition: all 0.3s ease;
+}
+#nav-list li a:hover{
+    color: var(--heading-color);
+    text-decoration: underline;
+    
+    
 }
